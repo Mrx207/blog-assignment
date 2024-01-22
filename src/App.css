@@ -1,0 +1,37 @@
+div#navbarSupportedContent {
+  justify-content: space-between;
+}
+
+.news-header-list {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  border-bottom: 1px solid #0001;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.list-group {
+  list-style: none;
+}
+
+.card-gap {
+  gap: 20px;
+}
+
+.search-btn {
+  border: 0;
+  background: transparent;
+}
