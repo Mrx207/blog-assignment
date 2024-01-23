@@ -1,13 +1,14 @@
 import { userContext } from "../context/userContext";
-import { historyContext } from "../context/historyContext";
 
 export default function BlogForm() {
-  let { blogForm, setBlogForm } = userContext();
-  const { setFormDataHistory } = historyContext();
+  let { blogForm, setBlogForm, setFormDataHistory } = userContext();
+  //   const { formDataHistory, setFormDataHistory } = historyContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(blogForm);
+    setBlogForm({
+      ...blogForm,
+    });
     setFormDataHistory((prevHistory) => [...prevHistory, blogForm]);
     setBlogForm({ title: "", content: "" });
   };
